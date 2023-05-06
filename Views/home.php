@@ -2,14 +2,14 @@
 <html lang="ja">
  
 <head>
-    <?php include_once('/Applications/MAMP/htdocs/TwitterClone/Views/common/head.php'); ?>
+    <?php include_once('../Views/common/head.php'); ?>
     <title>ホーム画面 / Twitterクローン</title>
     <meta name="description" content="ホーム画面です">
 </head>
  
 <body class="home">
     <div class="container">
-        <?php include_once('/Applications/MAMP/htdocs/TwitterClone/Views/common/side.php'); ?>
+        <?php include_once('../Views/common/side.php'); ?>
         <div class="main">
             <div class="main-header">
                 <h1>ホーム</h1>
@@ -42,13 +42,13 @@
             <?php else : ?>
                 <div class="tweet-list">
                     <?php foreach ($view_tweets as $view_tweet) : ?>
-                        <?php include('/Applications/MAMP/htdocs/TwitterClone/Views/common/tweet.php'); ?>
+                        <?php include('../Views/common/tweet.php'); ?>
                     <?php endforeach; ?>
                 </div>
             <?php endif; ?>
         </div>
     </div>
-    <?php include_once('/Applications/MAMP/htdocs/TwitterClone/Views/common/foot.php'); ?>
+    <?php include_once('../Views/common/foot.php'); ?>
 </body>
  
 </html>

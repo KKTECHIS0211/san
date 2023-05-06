@@ -1,8 +1,8 @@
 <?php
 //設定関連を読み込む
-include_once('/Applications/MAMP/htdocs/TwitterClone/config.php');
+include_once('../config.php');
 //便利な関数を読み込む
-include_once('/Applications/MAMP/htdocs/TwitterClone/Views/util.php');
+include_once('../util.php');
 
 ///////////////////////////////////////
 // ツイート一覧
@@ -25,14 +25,14 @@ $view_tweets = [
 <html lang="ja">
 
 <head>
-    <?php include_once('/Applications/MAMP/htdocs/TwitterClone/Views/common/head.php'); ?>
+    <?php include_once('../Views/common/head.php'); ?>
     <title>プロフィール画面 / Twitterクローン</title>
     <meta name="description" content="プロフィール画面です">
 </head>
 
 <body class="home profile text-center">
     <div class="container">
-        <?php include_once('/Applications/MAMP/htdocs/TwitterClone/Views/common/side.php'); ?>
+        <?php include_once('../Views/common/side.php'); ?>
         <div class="main">
             <div class="main-header">
                 <h1>太郎</h1>
@@ -110,13 +110,13 @@ $view_tweets = [
             <?php else : ?>
                 <div class="tweet-list">
                     <?php foreach ($view_tweets as $view_tweet) : ?>
-                        <?php include_once('/Applications/MAMP/htdocs/TwitterClone/Views/common/tweet.php'); ?>
+                        <?php include_once('../Views/common/tweet.php'); ?>
                     <?php endforeach; ?>
                 </div>
             <?php endif; ?>
         </div>
     </div>
-    <?php include_once('/Applications/MAMP/htdocs/TwitterClone/Views/common/foot.php'); ?>
+    <?php include_once('../Views/common/foot.php'); ?>
 </body>
  
 </html>

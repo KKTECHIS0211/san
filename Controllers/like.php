@@ -4,11 +4,11 @@
 ///////////////////////////////////////
 
 // 設定を読み込み
-include_once '/Applications/MAMP/htdocs/TwitterClone/config.php';
+include_once '../config.php';
 // 便利な関数を読み込み
-include_once '/Applications/MAMP/htdocs/TwitterClone/Views/util.php';
+include_once '../util.php';
 // いいね！データ操作モデルを読み込む
-include_once '/Applications/MAMP/htdocs/TwitterClone/Models/likes.php';
+include_once '../Models/likes.php';
 
 // ------------------------------------
 // ログインチェック

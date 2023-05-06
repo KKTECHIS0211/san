@@ -4,12 +4,12 @@
 ///////////////////////////////////////
  
 // 設定を読み込み
-include_once '/Applications/MAMP/htdocs/TwitterClone/config.php';
+include_once '../config.php';
 // 便利な関数を読み込み
-include_once '/Applications/MAMP/htdocs/TwitterClone/Views/util.php';
+include_once '../util.php';
  
 // ツイートデータ操作を読み込む
-include_once '/Applications/MAMP/htdocs/TwitterClone/Models/tweets.php';
+include_once '../Models/tweets.php';
 
 // ログインチェック
 $user = getUserSession();
@@ -25,4 +25,4 @@ $view_user = $user;
 $view_tweets = findTweets($user);
 
 // 画面表示
-include_once '/Applications/MAMP/htdocs/TwitterClone/Views/home.php';
+include_once '../Views/home.php';
